@@ -46,7 +46,7 @@ const Hero = () => {
             data-aos="fade-up"
           >
             <a
-              href="/contact"
+              href="/Contact"
               className="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded font-medium transition duration-300"
             >
               Contact Info
