@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
@@ -18,6 +19,19 @@ const Hero = () => {
   return (
     <section className="bg-black text-white py-20 relative">
       <div className="max-w-screen-xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        {/* Profile Photo */}
+        <div
+          className="justify-center"
+          data-aos="fade-up"
+        >
+          <div className="w-96 h-96 md:w-112 md:h-112">
+            <img
+              src="photo-2.png"
+              alt="Profile"
+              className="hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </div>
         {/* Text Content */}
         <div className="space-y-8 text-center md:text-left" data-aos="fade-up">
           <h1 className="text-4xl md:text-5xl font-bold leading-snug">
@@ -28,7 +42,7 @@ const Hero = () => {
           </h1>
           <div className="text-xl md:text-2xl font-semibold text-yellow-500">
             <Typewriter
-              words={["ML Engineer", "Data Scientist"]}
+              words={["ML Engineer", "Data Scientist", "AI Enthusiast"]}
               loop={true}
               cursor
               cursorStyle="_"
@@ -38,20 +52,21 @@ const Hero = () => {
             />
           </div>
           <p className="text-lg md:text-xl text-gray-300" data-aos="fade-up">
-            I&apos;m a Machine Learning Engineer based in Yogyakarta. I have a
-            passion for Machine Learning and Artificial Intelligence.
+            I&apos;m a Machine Learning Engineer based in Yogyakarta. I have a passion
+            for Machine Learning and Artificial Intelligence. I specialize in developing
+            intelligent systems, data-driven solutions, and end-to-end machine learning
+            workflows.
           </p>
           <div
             className="flex flex-wrap justify-center md:justify-start space-x-4"
             data-aos="fade-up"
           >
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="bg-yellow-500 hover:bg-yellow-600 text-black py-2 px-4 rounded font-medium transition duration-300"
             >
               Contact Info
-            </a>
-            {/* Download CV Button */}
+            </Link>
             <button
               onClick={() => setShowCvOptions(!showCvOptions)}
               className="border border-yellow-500 hover:bg-yellow-600 hover:text-black text-yellow-500 py-2 px-4 rounded font-medium transition duration-300"
@@ -111,20 +126,6 @@ const Hero = () => {
             >
               <FaGithub size={28} />
             </a>
-          </div>
-        </div>
-
-        {/* Profile Photo */}
-        <div
-          className="relative flex justify-center md:justify-end"
-          data-aos="fade-up"
-        >
-          <div className="w-96 h-96 md:w-112 md:h-112">
-            <img
-              src="photo-2.png"
-              alt="Profile"
-              className="hover:scale-105 transition-transform duration-500"
-            />
           </div>
         </div>
       </div>
