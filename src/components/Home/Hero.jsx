@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
-  const [showCvOptions, setShowCvOptions] = useState(false); 
+  const [showCvOptions, setShowCvOptions] = useState(false);
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      easing: "ease-in-out", 
-      once: true, 
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
     });
   }, []);
 
@@ -20,25 +20,21 @@ const Hero = () => {
     <section className="bg-black text-white py-20 relative">
       <div className="max-w-screen-xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         {/* Profile Photo */}
-        <div
-          className="justify-center"
-          data-aos="fade-up"
-        >
-          <div className="w-96 h-96 md:w-112 md:h-112">
+        <div className="flex justify-center md:justify-start" data-aos="fade-up">
+          <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 lg:w-112 lg:h-112 flex-shrink-0 mr-4">
             <img
-              src="photo-2.png"
+              src="photo-gif.gif"
               alt="Profile"
-              className="hover:scale-105 transition-transform duration-500"
+              className="hover:scale-105 transition-transform duration-500 rounded-full object-cover border-8 border-yellow-500 w-full h-full"
             />
           </div>
         </div>
+
         {/* Text Content */}
         <div className="space-y-8 text-center md:text-left" data-aos="fade-up">
           <h1 className="text-4xl md:text-5xl font-bold leading-snug">
-            Hello, I&apos;m{" "}
-            <span className="text-yellow-500 whitespace-nowrap">
-              Rheisan Firnandatama
-            </span>
+            Hello, I&apos;m
+            <span className="block text-yellow-500">Rheisan Firnandatama</span>
           </h1>
           <div className="text-xl md:text-2xl font-semibold text-yellow-500">
             <Typewriter
@@ -74,6 +70,7 @@ const Hero = () => {
               Download CV 📄
             </button>
           </div>
+
           {/* CV Options */}
           {showCvOptions && (
             <div
@@ -98,6 +95,7 @@ const Hero = () => {
               </a>
             </div>
           )}
+
           <div
             className="flex justify-center md:justify-start space-x-6 mt-6"
             data-aos="fade-up"
