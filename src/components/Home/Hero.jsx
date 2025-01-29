@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="flex justify-center md:justify-start" data-aos="fade-up">
           <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 lg:w-112 lg:h-112 flex-shrink-0 mr-4">
             <img
-              src="photo-gif.gif"
+              src="portfolio.gif"
               alt="Profile"
               className="hover:scale-105 transition-transform duration-500 rounded-full object-cover border-8 border-yellow-500 w-full h-full"
             />
