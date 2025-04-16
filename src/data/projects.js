@@ -1,6 +1,13 @@
 export const projects = [
     {
       id: 1,
+      name: "Hybrid LLaMA & NL2SQL for Diskominfo Sleman",
+      image: "/project/NL2SQL.png",
+      tags: ["Natural Language Processing", "Large Language Models"],
+      modals: "This project integrates state-of-the-art AI technologies—LLaMA (Large Language Model) and Retrieval-Augmented Generation (RAG)—to develop an advanced Natural Language to SQL (NL2SQL) system tailored for the Sleman District Office (Diskominfo Sleman). Designed to bridge the gap between non-technical users and complex database queries, the system enables seamless interaction with Sleman’s administrative databases using natural language (Bahasa Indonesia or local dialects) while maintaining high accuracy and contextual awareness.",
+    },
+    {
+      id: 2,
       name: "SkinPath: Skin Type Analysis",
       image: "/project/skinpath.png",
       tags: ["Convolutional Neural Networks"],
@@ -8,7 +15,7 @@ export const projects = [
       github:"https://github.com/rheikun/skin-type-analysis",
     },
     {
-      id: 2,
+      id: 3,
       name: "PersonaWay: DISC Personality Test",
       image: "/project/PersonaWay.png",
       tags: ["Natural Language Processing"],
@@ -16,7 +23,7 @@ export const projects = [
       github:"https://github.com/PersonaWay",
     },
     {
-      id: 3,
+      id: 4,
       name: "Youtube Sentiment Analysis with NLP",
       image: "/project/sentiment.png",
       tags: ["Natural Language Processing"],
@@ -24,7 +31,7 @@ export const projects = [
       github:"https://github.com/rheikun/youtube-sentiment-analysis-nlp",
     },
     {
-      id: 4,
+      id: 5,
       name: "Bike Sharing Analyst",
       image: "/project/bikesharing.png",
       tags: ["Others"],
@@ -32,7 +39,7 @@ export const projects = [
       github:"https://github.com/rheikun/bike-sharing",
     },
     {
-      id: 5,
+      id: 6,
       name: "Stock Prediction Using Linear Regression",
       image: "/project/regression.png",
       tags: ["Others"],
